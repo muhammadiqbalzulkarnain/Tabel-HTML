@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel HTML</title>
+</head>
+<body>
+    <!-- ELEMEN DASAR -->
+    <h1>ELEMEN DASAR</h1>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>Kelas</th>
+        </tr>
+        <tr>
+            <td>Ani</td>
+            <td>X A Farmasi</td>
+        </tr>
+    </table>
+
+    <!-- ATRIBUT CELLPADING DAN CELLSPACING -->
+    <h1>ATRIBUT CELLPADING DAN CELLSPACING</h1>
+    <table border="1" cellpading="5" cellspacing="0">
+        <tr>
+            <th>Nama</th>
+            <th>Kelas</th>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+    <!-- ATRIBUT COLSPAN DAN ROWSPAN -->
+    <h1>ATRIBUT COLSPAN DAN ROWSPAN</h1>
+    <table border="1">
+        <tr>
+            <th colspan="2">Data Siswa</th>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td>Kelas</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Nama</th>
+            <td>Ani</td>
+        </tr>
+        <tr>
+            <td>Budi</td>
+        </tr>
+    </table>
+
+    <!-- ELEMEN TAMBAHAN DALAM TABEL -->
+    <h1>ELEMEN TAMBAHAN DALAM TABEL</h1>
+    <table border="1">
+        <caption>Daftar Nilai</caption>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Iqbal</td>
+                <td>94.00</td>
+            </tr>
+            <tr>
+                <td>Syahada</td>
+                <td>92.92</td>
+            </tr>
+            <tr>
+                <td>Ra'isa</td>
+                <td>91.38</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Siswa: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- AKSESIBILATAS DASAR PENGGUNAAN SCOPE-->
+    <h1>AKSESIBILATAS DASAR PENGGUNAAN SCOPE</h1>
+    <table border="1" cellpading="10" cellspacing="0">
+        <caption>Jadwal Pelajaran</caption>
+        <thead>
+            <tr>
+                <th scope="col">Hari</th>
+                <th scope="col">Jam</th>
+                <th scope="col">Mata Pelajaran</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Senin</th>
+                <td>07.30 - 09.00</td>
+                <td>Matematika</td>
+            </tr>
+            <tr>
+                <th scope="row">Selasa</th>
+                <td>09.15 - 10.45</td>
+                <td>Bahasa Indonesia</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
